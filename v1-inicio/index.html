@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClockVibe v1 — Início</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #050505; color: #00f2ff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .clock-container { text-align: center; padding: 40px; border: 2px solid #00f2ff; border-radius: 20px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.2); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #050505; color: #00f2ff; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; padding: 40px 20px; }
+        .clock-container { text-align: center; padding: 40px; border: 2px solid #00f2ff; border-radius: 20px; box-shadow: 0 0 20px rgba(0, 242, 255, 0.2); margin-bottom: 40px; width: 100%; max-width: 600px; }
         .time { font-size: 5rem; font-weight: bold; margin-bottom: 10px; }
         .date { font-size: 1.5rem; color: #fff; opacity: 0.8; }
         .theme-btn { margin-top: 30px; padding: 10px 20px; background: #00f2ff; color: #050505; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        footer { position: absolute; bottom: 20px; font-size: 0.8rem; color: #555; }
+        
+        .info-section { width: 100%; max-width: 800px; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; margin-bottom: 20px; border: 1px solid rgba(0, 242, 255, 0.1); }
+        h2 { color: #00f2ff; border-bottom: 1px solid rgba(0, 242, 255, 0.2); padding-bottom: 10px; margin-top: 0; }
+        .problemas-list { list-style: none; padding: 0; }
+        .problemas-list li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .problemas-list li::before { content: '✓'; position: absolute; left: 0; color: #00f2ff; }
+        
+        .faq-item { margin-bottom: 15px; }
+        .faq-item strong { color: #00f2ff; display: block; margin-bottom: 5px; }
+        
+        .feedback-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .feedback-card { padding: 15px; border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 10px; font-style: italic; }
+        .feedback-card span { display: block; margin-top: 10px; font-weight: bold; font-style: normal; color: #00f2ff; }
+        
+        footer { margin-top: 40px; font-size: 0.8rem; color: #555; }
     </style>
 </head>
 <body>
@@ -19,6 +33,44 @@
         <div class="date" id="date">01 de Janeiro de 2026</div>
         <button class="theme-btn" onclick="toggleTheme()">Mudar Tema</button>
     </div>
+
+    <div class="info-section">
+        <h2>5 Problemas que Resolvemos</h2>
+        <ul class="problemas-list">
+            <li>1. Falta de foco durante o trabalho ou estudo.</li>
+            <li>2. Dificuldade em acompanhar o tempo em tela cheia.</li>
+            <li>3. Ambiente de trabalho visualmente cansativo.</li>
+            <li>4. Perda de noção do progresso do dia.</li>
+            <li>5. Necessidade de um relógio estiloso para setups modernos.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <div class="faq-item">
+            <strong>O relógio funciona offline?</strong>
+            <p>Sim, o ClockVibe utiliza o horário do seu sistema e funciona sem internet.</p>
+        </div>
+        <div class="faq-item">
+            <strong>Como mudo as cores?</strong>
+            <p>Basta clicar no botão "Mudar Tema" para alternar entre os modos.</p>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h2>Feedback dos Usuários</h2>
+        <div class="feedback-grid">
+            <div class="feedback-card">
+                "O relógio mais bonito que já usei no meu segundo monitor!"
+                <span>— Carlos Eduardo</span>
+            </div>
+            <div class="feedback-card">
+                "Simples, direto e muito estiloso. Adorei o tema dark."
+                <span>— Beatriz Santos</span>
+            </div>
+        </div>
+    </div>
+
     <footer>&copy; 2026 ClockVibe - Projeto Uninove v1</footer>
     <script>
         function updateClock() {

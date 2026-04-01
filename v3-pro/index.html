@@ -31,6 +31,7 @@
       <a href="javascript:void(0)" onclick="showPage('temas')">Temas</a>
       <a href="javascript:void(0)" onclick="showPage('planos')">Assinaturas</a>
       <a href="javascript:void(0)" onclick="showPage('vendas')">Loja</a>
+      <a href="javascript:void(0)" onclick="showPage('sobre')">Sobre & FAQ</a>
     </nav>
     <div class="cv-actions">
       <button class="btn-widget" id="toggleWidget" title="Modo Widget Desktop">
@@ -124,28 +125,6 @@
           </button>
         </div>
       </div>
-
-      <div class="theme-category">
-        <h3>🦸 Heróis & Aventura</h3>
-        <div class="themes-grid">
-          <button class="theme-card pro-locked" data-theme="hero-dark">
-            <div class="theme-preview hero-dark"></div>
-            <span>Dark Knight <i data-lucide="lock" class="lock-icon"></i></span>
-          </button>
-          <button class="theme-card pro-locked" data-theme="hero-red">
-            <div class="theme-preview hero-red"></div>
-            <span>Spider Web <i data-lucide="lock" class="lock-icon"></i></span>
-          </button>
-          <button class="theme-card pro-locked" data-theme="hero-blue">
-            <div class="theme-preview hero-blue"></div>
-            <span>Super Blue <i data-lucide="lock" class="lock-icon"></i></span>
-          </button>
-          <button class="theme-card pro-locked" data-theme="nebula">
-            <div class="theme-preview nebula"></div>
-            <span>Nebula <i data-lucide="lock" class="lock-icon"></i></span>
-          </button>
-        </div>
-      </div>
     </section>
   </main>
 
@@ -180,17 +159,6 @@
           </ul>
           <button class="btn-price btn-primary" onclick="showPage('vendas')">Assinar Agora</button>
         </div>
-        <div class="price-card">
-          <h3>Lifetime</h3>
-          <div class="price">R$ 99<span>/único</span></div>
-          <ul>
-            <li><i data-lucide="check"></i> Acesso Vitalício</li>
-            <li><i data-lucide="check"></i> Todas as Futuras Atualizações</li>
-            <li><i data-lucide="check"></i> Certificado Digital PRO</li>
-            <li><i data-lucide="check"></i> Cloud Sync</li>
-          </ul>
-          <button class="btn-price" onclick="showPage('vendas')">Comprar Agora</button>
-        </div>
       </div>
     </section>
   </main>
@@ -215,11 +183,66 @@
             <span>Total</span>
             <span>R$ 19,00</span>
           </div>
-          <div class="payment-methods">
-            <button class="btn-pay active"><i data-lucide="credit-card"></i> Cartão</button>
-            <button class="btn-pay"><i data-lucide="qr-code"></i> PIX</button>
-          </div>
           <button class="btn-checkout">Pagar Agora</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PÁGINA: SOBRE / FAQ ===== -->
+  <main class="page" id="page-sobre">
+    <section class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre o ClockVibe</h2>
+        <p class="section-desc">A solução definitiva para o seu tempo e produtividade.</p>
+      </div>
+
+      <div class="info-grid-cv">
+        <div class="info-card-cv">
+          <h3>5 Problemas que Resolvemos</h3>
+          <ul class="list-cv">
+            <li><strong>1. Distração Visual:</strong> Interface limpa que ajuda a manter o foco no que importa.</li>
+            <li><strong>2. Perda de Noção do Tempo:</strong> Barra de progresso do dia para você saber quanto tempo ainda resta.</li>
+            <li><strong>3. Setup Sem Estilo:</strong> Temas variados que combinam com qualquer decoração de mesa ou desktop.</li>
+            <li><strong>4. Dificuldade de Leitura:</strong> Relógio digital de alta visibilidade e analógico clássico.</li>
+            <li><strong>5. Falta de Ferramentas:</strong> Cronômetro e Timer integrados para suas sessões de estudo ou trabalho.</li>
+          </ul>
+        </div>
+
+        <div class="info-card-cv">
+          <h3>Perguntas Frequentes (FAQ)</h3>
+          <div class="faq-cv">
+            <div class="faq-item-cv">
+              <strong>Como instalo como App?</strong>
+              <p>No Chrome ou Edge, clique no ícone de instalação na barra de endereços.</p>
+            </div>
+            <div class="faq-item-cv">
+              <strong>Os temas são gratuitos?</strong>
+              <p>Temos temas gratuitos e temas exclusivos para assinantes Pro.</p>
+            </div>
+            <div class="faq-item-cv">
+              <strong>Funciona em tablets?</strong>
+              <p>Sim, o ClockVibe é totalmente responsivo e funciona em qualquer dispositivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top: 60px;">
+        <h2 class="section-title">Feedback da Comunidade</h2>
+      </div>
+      <div class="feedback-grid-cv">
+        <div class="feedback-card-cv">
+          <p>"Uso o ClockVibe no meu segundo monitor enquanto programo. O tema Cyberpunk é sensacional!"</p>
+          <span>— Lucas Ferreira</span>
+        </div>
+        <div class="feedback-card-cv">
+          <p>"O melhor relógio PWA que já encontrei. Leve, rápido e muito bonito."</p>
+          <span>— Mariana Costa</span>
+        </div>
+        <div class="feedback-card-cv">
+          <p>"A barra de progresso do dia me ajuda muito a gerenciar minhas tarefas da faculdade."</p>
+          <span>— Pedro Henrique</span>
         </div>
       </div>
     </section>
@@ -244,11 +267,7 @@
         <a href="javascript:void(0)" onclick="showPage('home')">Início</a>
         <a href="javascript:void(0)" onclick="showPage('temas')">Temas</a>
         <a href="javascript:void(0)" onclick="showPage('planos')">Assinaturas</a>
-      </div>
-      <div class="footer-social">
-        <i data-lucide="instagram"></i>
-        <i data-lucide="twitter"></i>
-        <i data-lucide="github"></i>
+        <a href="javascript:void(0)" onclick="showPage('sobre')">Sobre & FAQ</a>
       </div>
     </div>
     <p class="copyright">&copy; 2026 ClockVibe Pro. Todos os direitos reservados.</p>
@@ -257,7 +276,6 @@
   <script src="script.js"></script>
   <script>
     lucide.createIcons();
-    // Register Service Worker for PWA
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
